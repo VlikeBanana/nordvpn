@@ -1,7 +1,7 @@
 <p align="center">
 </p>
 
-Official `NordVPN` client in a docker container; it makes routing traffic through the `NordVPN` network easy.
+Official `NordVPN` client in an unofficial docker container; it makes routing traffic through the `NordVPN` network easy.
 
 # How to use this image
 This container was designed to be started first to provide a connection to other containers (using `--net=container:vpn`, see below *Starting an NordVPN client instance*).
@@ -18,9 +18,6 @@ Once it's up other containers can be started using its network connection:
     docker run -it --net=container:vpn -d other/docker-container
 
     
-# Make sure that you can access your server from the internet
-# for example configure dmz on your router
-# the torrent service would be available at https://mytorrent.duckdns.org
 ```
 
 # ENVIRONMENT VARIABLES
